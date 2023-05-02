@@ -4,6 +4,6 @@ services:
     plan: free
     numInstances: 1
     env: rust
-    repo: https://github.com/szabodanika/microbin.git
+    repo: https://github.com/dr-msr/text.git
     buildCommand: cargo build --release
-    startCommand: ./target/release/microbin --editable --highlightsyntax
+    startCommand: ./target/release/microbin ./target/release/microbin --editable --default-expiry never --hash-ids --hide-logo --title Dr. Syamirul --public-path https://text.drsyamirul.com
