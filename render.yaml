@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: microbin
+    name: text-drsyamirul
     plan: free
     numInstances: 1
     env: rust
