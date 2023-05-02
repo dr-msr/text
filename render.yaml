@@ -6,4 +6,4 @@ services:
     env: rust
     repo: https://github.com/dr-msr/text.git
     buildCommand: cargo build --release
-    startCommand: ./target/release/microbin --editable --default-expiry never --hash-ids --hide-logo --title "Dr. Syamirul" --public-path https://text.drsyamirul.com
+    startCommand: ./target/release/microbin --editable --default-expiry never --hash-ids --hide-logo --title "Dr. Syamirul" --public-path https://text.drsyamirul.com --hide-footer --qr
