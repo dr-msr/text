@@ -9,7 +9,7 @@
     Copy Redirect
   </button>
   {%- endif %}
-  <a style="margin-right: 1rem" href="{{ args.public_path }}/raw/{{pasta.id_as_animals()}}">Raw Text
+  <a style="margin-right: 1rem; display:none;" href="{{ args.public_path }}/raw/{{pasta.id_as_animals()}}">Raw Text
     Content</a>
   {%- endif %}
   {% if args.qr && args.public_path.to_string() != "" %}
