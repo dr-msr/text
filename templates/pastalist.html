@@ -35,7 +35,6 @@
                     {{pasta.created_as_string()}}
                 </td>
                 <td>
-                    <a style="margin-right:1rem" href="{{ args.public_path }}/raw/{{pasta.id_as_animals()}}">Raw</a>
                     {% if pasta.file.is_some() %}
                     <a style="margin-right:1rem"
                         href="{{ args.public_path }}/file/{{pasta.id_as_animals()}}/{{pasta.file.as_ref().unwrap().name()}}">File</a>
@@ -51,9 +50,8 @@
         </tbody>
     </table>
     <br>
-    <h3>URL Redirects</h3>
     {% if args.pure_html %}
-    <table border="1" style="width: 100%">
+    <table border="1" style="width: 100%; display: none;">
         {% else %}
         <table style="width: 100%">
             {% endif %}
